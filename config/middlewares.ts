@@ -15,7 +15,14 @@ export default [
       },
     },
   },
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      header: '*',
+      origin: ['http://localhost:3000', 'https://visitantes-silver-park-test.vercel.app'],
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
