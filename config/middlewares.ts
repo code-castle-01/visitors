@@ -20,7 +20,7 @@ export default [
     config: {
       enabled: true,
       headers: ['*'],
-      origin: ['http://localhost:3000', 'https://visitors-4i25.onrender.com', 'https://visitantes-silver-park-test.vercel.app/'],
+      origin: ['https://visitantes-silver-park-test.vercel.app', 'http://localhost:3000', 'https://visitors-4i25.onrender.com'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       keepHeaderOnError: true,
       credentials: true,
