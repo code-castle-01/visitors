@@ -19,8 +19,11 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      header: '*',
-      origin: ['http://localhost:3000', 'https://visitantes-silver-park-test.vercel.app'],
+      headers: ['*'],
+      origin: ['http://localhost:3000', 'https://visitors-4i25.onrender.com'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+      keepHeaderOnError: true,
+      credentials: true,
     },
   },
   'strapi::poweredBy',
