@@ -392,7 +392,6 @@ export interface ApiVisitorVisitor extends Schema.CollectionType {
         };
       }>;
     image: Attribute.Media<'images', true> &
-      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
