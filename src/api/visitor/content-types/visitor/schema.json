@@ -51,7 +51,8 @@
           "localized": true
         }
       },
-      "type": "text"
+      "type": "text",
+      "maxLength": 50000
     }
   }
 }

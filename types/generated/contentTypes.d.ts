@@ -402,6 +402,9 @@ export interface ApiVisitorVisitor extends Schema.CollectionType {
         i18n: {
           localized: true;
         };
+      }> &
+      Attribute.SetMinMaxLength<{
+        maxLength: 50000;
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
