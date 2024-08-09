@@ -44,6 +44,14 @@
           "localized": true
         }
       }
+    },
+    "signature": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
     }
   }
 }
