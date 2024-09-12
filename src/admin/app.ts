@@ -1,8 +1,18 @@
 export default {
   config: {
-    // Add a new locale, other than 'en'
-    locales: ["fr", "de"],
-    // Replace the Strapi logo in the main navigation
+    // Agregar locales aquí
+    locales: ["es"], // Agrega "es" para español
+
+    // Extender las traducciones
+    translations: {
+      es: {
+        "Auth.form.email.label": "Correo Electrónico",
+        "Auth.form.password.label": "Contraseña",
+        Users: "Usuarios",
+        City: "Ciudad",
+        Id: "ID",
+      },
+    },
     theme: {
       colors: {
         primary100: "#f6ecfc",
@@ -13,21 +23,10 @@ export default {
         danger700: "#b72b1a",
       },
     },
-    // Extend the translations
-    translations: {
-      fr: {
-        "Auth.form.email.label": "test",
-        Users: "Utilisateurs",
-        City: "CITY (FRENCH)",
-        // Customize the label of the Content Manager table.
-        Id: "ID french",
-      },
-    },
     // Disable video tutorials
     tutorials: false,
     // Disable notifications about new Strapi releases
     notifications: { releases: false },
   },
-
   bootstrap() {},
 };
